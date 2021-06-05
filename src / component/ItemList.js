@@ -5,11 +5,11 @@ import Link from "next/link";
 function ItemList({ list }) {
   return (
     <div>
-      <div class="ui three column divided grid">
-        <div class="row">
+      <div className="ui three column divided grid">
+        <div className="row">
           {list.map((item) => (
-            <div class="column" key={item.id}>
-              <Link href={`/view/${item.id}`}>
+            <div className="column" key={item.id}>
+              <Link href="/view/[id]" as={`/view/${item.id}`}>
                 <a>
                   <div className={styles.wrap}>
                     <img
