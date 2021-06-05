@@ -3,6 +3,7 @@ import React from "react";
 import { Divider, List, Header, Form, TextArea } from "semantic-ui-react";
 
 function about() {
+  let nextjs;
   return (
     <>
       <Header>회사 소개</Header>
