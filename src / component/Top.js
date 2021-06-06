@@ -12,7 +12,7 @@ function Top() {
             alt="log"
             style={{ display: "block", width: 80, marginRight: 10 }}
           />
-          <Header as="h1">캐딜락</Header>
+          <Header as="h1">쀼띠쓰</Header>
         </div>
       </div>
       <Gnb />
