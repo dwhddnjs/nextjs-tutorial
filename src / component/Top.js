@@ -8,11 +8,10 @@ function Top() {
       <div style={{ display: "felx", paddingTop: 20 }}>
         <div style={{ display: "flex" }}>
           <img
-            src="/images/ca.png"
+            src="/images/di.png"
             alt="log"
             style={{ display: "block", width: 80, marginRight: 10 }}
           />
-          <Header as="h1">쀼띠쓰</Header>
         </div>
       </div>
       <Gnb />

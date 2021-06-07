@@ -10,6 +10,16 @@
   margin: 0, auto;
 }
 
+.new {
+  display: flex;
+  width: 1000px;
+}
+
+.old {
+  margin-left: 50px;
+
+  padding-top: 20px;
+}
 .tit_item {
   display: -webkit-box;
   -webkit-line-clamp: 2;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Header } from "semantic-ui-react";
+import { Button, Header, Divider } from "semantic-ui-react";
 import styles from "./ItemList.module.css";
 
 function Item({ item }) {
@@ -17,21 +17,23 @@ function Item({ item }) {
   return (
     <>
       <div className={styles.wrap}>
-        <div className={styles.img_item}>
+        <div className={(styles.img_item, styles.new)}>
           <img src={image_link} alt={name} />
-        </div>
-        <div className={styles.info_item}>
-          <strong className={styles.tit_item}>{name}</strong>
-          <strong className={styles.num_price}>${price}</strong>
-          <span className={styles.txt_info}>
-            {category ? `${category}/` : ""}
-            {product_type}
-          </span>
-          <Button color="orange"> 구매하기</Button>
+          <div className={(styles.info_item, styles.old)}>
+            <strong className={styles.tit_item}>{name}</strong>
+            <strong className={styles.num_price}>${price}</strong>
+            <span className={styles.txt_info}>
+              {category ? `${category}/` : ""}
+              {product_type}
+            </span>
+            <Button color="orange"> 구매하기</Button>
+          </div>
         </div>
       </div>
+      <Divider />
       <Header as="h3">Description</Header>
       <p style={{ paddingBottom: 20, fontSize: 18 }}>{description}</p>
+      <Divider />
     </>
   );
 }

@@ -10,7 +10,7 @@ export default function Home({ list }) {
   return (
     <div>
       <Head>
-        <title>Home | 캐딜락</title>
+        <title>Home | Dior</title>
       </Head>
       <>
         <Header as="h3" style={{ paddingTop: 40 }}>
@@ -23,6 +23,7 @@ export default function Home({ list }) {
         </Header>
         <Divider />
         <ItemList list={list.slice(9)} />
+        <Divider />
       </>
     </div>
   );
