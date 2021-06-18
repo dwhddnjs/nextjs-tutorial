@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useRouter } from "next/router";
 import { Loader } from "semantic-ui-react";
-import { useEffect, useState } from "react";
 import Item from "../../src / component/Item";
 import Head from "next/head";
 
